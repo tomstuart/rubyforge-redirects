@@ -27,6 +27,7 @@ PLATFORMS
 
 DEPENDENCIES
   cucumber
+  rack
   rack-rewrite
   rack-test
   rspec-expectations
