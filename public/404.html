@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>RubyForge has been retired</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+      var project_name = window.location.hostname.split(".")[0];
+      $(".project-name").text(project_name);
+      $("#search-term").val(project_name + " ruby");
+      $("#search-term").focus();
+    });
+    </script>
+  </head>
+  <body>
+    <h1>Oh dear</h1>
+    <p>Sorry, RubyForge has been retired, and we don&rsquo;t know where the <span class="project-name"></span> project is hosted.</p>
+    <p>Try this Google search instead:
+      <form action="https://www.google.com">
+      <input type="text" id="search-term" name="q" value="ruby" />
+      <input type="submit" value="Search">
+      </form>
+    </p>
+    <p>If you find where the <span class="project-name"></span> project lives now, please submit a <a href="https://github.com/tomstuart/rubyforge-redirects">pull request</a> so that future visitors can be redirected automatically.</p>
+  </body>
+</html>
