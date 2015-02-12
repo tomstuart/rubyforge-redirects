@@ -10,14 +10,20 @@ Feature: Redirect old RubyForge URL
       And the redirect should send me to <a new non-RubyForge URL>
 
     Examples:
-      | an old RubyForge URL                                    | a new non-RubyForge URL                                     |
-      | http://mocha.rubyforge.org/                             | http://gofreerange.com/mocha/docs/                          |
-      | http://mocha.rubyforge.org/classes/Mocha/API.html       | http://gofreerange.com/mocha/docs/Mocha/API.html            |
-      | http://rack.rubyforge.org/                              | http://rack.github.io/                                      |
-      | http://rack.rubyforge.org/doc                           | http://www.rubydoc.info/github/rack/rack                    |
-      | http://rack.rubyforge.org/doc/SPEC.html                 | http://www.rubydoc.info/github/rack/rack/master/file/SPEC   |
-      | http://rack.rubyforge.org/doc/files/SPEC.html           | http://www.rubydoc.info/github/rack/rack/master/file/SPEC   |
-      | http://rack.rubyforge.org/doc/Rack/Request.html         | http://www.rubydoc.info/github/rack/rack/Rack/Request       |
-      | http://rack.rubyforge.org/doc/Rack/Response.html        | http://www.rubydoc.info/github/rack/rack/Rack/Response      |
-      | http://treetop.rubyforge.org/                           | http://cjheath.github.io/treetop/                           |
-      | http://treetop.rubyforge.org/syntactic_recognition.html | http://cjheath.github.io/treetop/syntactic_recognition.html |
+      | an old RubyForge URL                                      | a new non-RubyForge URL                                                   |
+      | http://libxml.rubyforge.org/                              | http://xml4r.github.io/libxml-ruby/                                       |
+      | http://libxml.rubyforge.org/rdoc                          | http://xml4r.github.io/libxml-ruby/rdoc                                   |
+      | http://libxml.rubyforge.org/doc/classes/XML/Document.html | http://xml4r.github.io/libxml-ruby/rdoc/classes/LibXML/XML/Document.html  |
+      | http://mocha.rubyforge.org/                               | http://gofreerange.com/mocha/docs/                                        |
+      | http://mocha.rubyforge.org/classes/Mocha/API.html         | http://gofreerange.com/mocha/docs/Mocha/API.html                          |
+      | http://rack.rubyforge.org/                                | http://rack.github.io/                                                    |
+      | http://rack.rubyforge.org/doc                             | http://www.rubydoc.info/github/rack/rack                                  |
+      | http://rack.rubyforge.org/doc/SPEC.html                   | http://www.rubydoc.info/github/rack/rack/master/file/SPEC                 |
+      | http://rack.rubyforge.org/doc/files/SPEC.html             | http://www.rubydoc.info/github/rack/rack/master/file/SPEC                 |
+      | http://rack.rubyforge.org/doc/Rack/Request.html           | http://www.rubydoc.info/github/rack/rack/Rack/Request                     |
+      | http://rack.rubyforge.org/doc/Rack/Response.html          | http://www.rubydoc.info/github/rack/rack/Rack/Response                    |
+      | http://rake.rubyforge.org/                                | http://docs.seattlerb.org/rake/                                           |
+      | http://rake.rubyforge.org/files/doc/rational_rdoc.html    | http://docs.seattlerb.org/rake/doc/rational_rdoc.html                     |
+      | http://rake.rubyforge.org/classes/Rake/FileList.html      | http://docs.seattlerb.org/rake/Rake/FileList.html                         |
+      | http://treetop.rubyforge.org/                             | http://cjheath.github.io/treetop/                                         |
+      | http://treetop.rubyforge.org/syntactic_recognition.html   | http://cjheath.github.io/treetop/syntactic_recognition.html               |
