@@ -17,3 +17,6 @@ Feature: Redirect old RubyForge URL
       | http://rack.rubyforge.org/doc/Rack/Response.html        | http://www.rubydoc.info/github/rack/rack/Rack/Response      |
       | http://treetop.rubyforge.org/                           | http://cjheath.github.io/treetop/                           |
       | http://treetop.rubyforge.org/syntactic_recognition.html | http://cjheath.github.io/treetop/syntactic_recognition.html |
+      | http://rake.rubyforge.org/                              | http://docs.seattlerb.org/rake/                             |
+      | http://rake.rubyforge.org/files/doc/rational_rdoc.html  | http://docs.seattlerb.org/rake/doc/rational_rdoc.html       |
+      | http://rake.rubyforge.org/classes/Rake/FileList.html    | http://docs.seattlerb.org/rake/Rake/FileList.html           |

@@ -8,6 +8,10 @@ use Rack::Rewrite do
 
   # treetop.rubyforge.org
   moved_permanently %r{^/(.*)$}, 'http://cjheath.github.io/treetop/$1', host: 'treetop.rubyforge.org'
+
+  # rake.rubyforge.org
+  moved_permanently '/', 'http://docs.seattlerb.org/rake/', host: 'rake.rubyforge.org'
+  moved_permanently %r{^/(?:files|classes)/(.+)$}, 'http://docs.seattlerb.org/rake/$1', host: 'rake.rubyforge.org'
 end
 
 run -> env { [404, {}, ['Not found']] }
