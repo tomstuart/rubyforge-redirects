@@ -27,3 +27,9 @@ Feature: Redirect old RubyForge URL
       | http://rake.rubyforge.org/classes/Rake/FileList.html      | http://docs.seattlerb.org/rake/Rake/FileList.html                         |
       | http://treetop.rubyforge.org/                             | http://cjheath.github.io/treetop/                                         |
       | http://treetop.rubyforge.org/syntactic_recognition.html   | http://cjheath.github.io/treetop/syntactic_recognition.html               |
+
+  Scenario:
+    When an unmapped old RubyForge URL is visited
+    Then a not found page should be presented
+      And the page should let me search for the gem
+      And the page should explain how I can fix this

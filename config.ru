@@ -1,4 +1,5 @@
 require 'rack/rewrite'
+require 'rack/contrib/not_found'
 
 use Rack::Rewrite do
   # libxml.rubyforge.org
@@ -23,5 +24,4 @@ use Rack::Rewrite do
   # treetop.rubyforge.org
   moved_permanently %r{^/(.*)$}, 'http://cjheath.github.io/treetop/$1', host: 'treetop.rubyforge.org'
 end
-
-run -> env { [404, {}, ['Not found']] }
+run Rack::NotFound.new(File.expand_path("../public/404.html", __FILE__))
