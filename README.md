@@ -18,4 +18,6 @@ Right now all \*.rubyforge.org hostnames just go nowhere, which seems a waste. T
 
 The main thing this app needs is *more redirects*. Please contribute redirects by adding examples to [the Cucumber feature](features/redirect.feature), making them pass in [the Rack app](config.ru), and submitting a pull request.
 
+There are also several [feature-related issues](https://github.com/tomstuart/rubyforge-redirects/labels/help%20wanted) which you could help with.
+
 Less importantly, the current implementation uses [Rack::Rewrite](https://github.com/jtrupiano/rack-rewrite) and is extremently rudimentary; please feel free to improve upon it.
