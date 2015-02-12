@@ -14,9 +14,9 @@ You can take advantage of it right now by adding entries to your `/etc/hosts` fi
 
 Right now all \*.rubyforge.org hostnames just go nowhere, which seems a waste. The goal of this app is to accumulate enough redirects that I can convince Ruby Central to point the real rubyforge.org DNS at it, thereby unbreaking all the rubyforge.org links in the wild. (I’d happily transfer ownership of the Heroku app and GitHub repo to Ruby Central in that case, or of course they could choose to run/fork their own.)
 
-## Help
+## Contributing
 
-The main thing this app needs is *more redirects*. Please contribute redirects by adding examples to [the Cucumber feature](features/redirect.feature), making them pass in [the Rack app](config.ru), and submitting a pull request.
+The main thing this app needs is *more redirects*. Please contribute redirects by adding examples to [the Cucumber feature](features/redirect.feature), making them pass in [the Rack app](config.ru) (you should be able to run `bundle exec cucumber` successfully), and submitting a pull request.
 
 There are also several [feature-related issues](https://github.com/tomstuart/rubyforge-redirects/labels/help%20wanted) which you could help with.
 
