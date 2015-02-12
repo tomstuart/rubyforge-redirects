@@ -12,6 +12,10 @@ use Rack::Rewrite do
   # rake.rubyforge.org
   moved_permanently '/', 'http://docs.seattlerb.org/rake/', host: 'rake.rubyforge.org'
   moved_permanently %r{^/(?:files|classes)/(.+)$}, 'http://docs.seattlerb.org/rake/$1', host: 'rake.rubyforge.org'
+
+  # libxml.rubyforge.org
+  moved_permanently %r{^/doc/classes/(.+)$}, 'http://xml4r.github.io/libxml-ruby/rdoc/classes/LibXML/$1', host: 'libxml.rubyforge.org'
+  moved_permanently %r{^/(.*)$}, 'http://xml4r.github.io/libxml-ruby/$1', host: 'libxml.rubyforge.org'
 end
 
 run -> env { [404, {}, ['Not found']] }
