@@ -14,7 +14,7 @@ Then /^the redirect should send me to (.*)$/ do |url|
   expect(last_response.location).to eq url
 end
 
-When(/^an umapped old RubyForge URL is visited$/) do
+When(/^an unmapped old RubyForge URL is visited$/) do
   visit 'http://some-arbitrary-unmapped-gem.rubyforge.org'
 end
 

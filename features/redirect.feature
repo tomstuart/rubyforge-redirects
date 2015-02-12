@@ -29,7 +29,7 @@ Feature: Redirect old RubyForge URL
       | http://treetop.rubyforge.org/syntactic_recognition.html   | http://cjheath.github.io/treetop/syntactic_recognition.html               |
 
   Scenario:
-    When an umapped old RubyForge URL is visited
+    When an unmapped old RubyForge URL is visited
     Then a not found page should be presented
       And the page should let me search for the gem
       And the page should explain how I can fix this
