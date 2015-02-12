@@ -6,7 +6,7 @@
 
 For example, blog posts referencing the Rack specification might link to http://rack.rubyforge.org/doc/SPEC.html, but the [correct URL](https://github.com/rack/rack/issues/633) is now http://www.rubydoc.info/github/rack/rack/master/file/SPEC.
 
-This repository contains a simple Rack application which can accept requests for old RubyForge URLs and permanently redirect them to their new location. It’s deployed on Heroku at http://rubyforge-redirects.herokuapp.com/, where it’s configured to serve all requests for \*.rubyforge.org hostnames.
+This repository contains a simple web application which can accept requests for old RubyForge URLs and permanently redirect them to their new location. It’s deployed on Heroku at http://rubyforge-redirects.herokuapp.com/, where it’s configured to serve all requests for \*.rubyforge.org hostnames.
 
 You can take advantage of it right now by adding entries to your `/etc/hosts` file to point supported \*.rubyforge.org hostnames at whatever IP address rubyforge-redirects.herokuapp.com currently resolves to. (I’d hoped to run something like `dnsmasq` locally to serve a CNAME, but I don’t see an easy way to make that work. [Help!](https://github.com/tomstuart/rubyforge-redirects/issues/1))
 
