@@ -11,6 +11,8 @@ Feature: Redirect old RubyForge URL
 
     Examples:
       | an old RubyForge URL                                    | a new non-RubyForge URL                                     |
+      | http://mocha.rubyforge.org/                             | http://gofreerange.com/mocha/docs/                          |
+      | http://mocha.rubyforge.org/classes/Mocha/API.html       | http://gofreerange.com/mocha/docs/Mocha/API.html            |
       | http://rack.rubyforge.org/                              | http://rack.github.io/                                      |
       | http://rack.rubyforge.org/doc                           | http://www.rubydoc.info/github/rack/rack                    |
       | http://rack.rubyforge.org/doc/SPEC.html                 | http://www.rubydoc.info/github/rack/rack/master/file/SPEC   |
