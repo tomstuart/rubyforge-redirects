@@ -12,7 +12,9 @@ Feature: Redirect old RubyForge URL
     Examples:
       | an old RubyForge URL                                    | a new non-RubyForge URL                                     |
       | http://rack.rubyforge.org/                              | http://rack.github.io/                                      |
+      | http://rack.rubyforge.org/doc                           | http://www.rubydoc.info/github/rack/rack                    |
       | http://rack.rubyforge.org/doc/SPEC.html                 | http://www.rubydoc.info/github/rack/rack/master/file/SPEC   |
+      | http://rack.rubyforge.org/doc/files/SPEC.html           | http://www.rubydoc.info/github/rack/rack/master/file/SPEC   |
       | http://rack.rubyforge.org/doc/Rack/Request.html         | http://www.rubydoc.info/github/rack/rack/Rack/Request       |
       | http://rack.rubyforge.org/doc/Rack/Response.html        | http://www.rubydoc.info/github/rack/rack/Rack/Response      |
       | http://treetop.rubyforge.org/                           | http://cjheath.github.io/treetop/                           |

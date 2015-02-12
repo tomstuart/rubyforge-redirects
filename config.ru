@@ -3,7 +3,9 @@ require 'rack/rewrite'
 use Rack::Rewrite do
   # rack.rubyforge.org
   moved_permanently '/', 'http://rack.github.io/', host: 'rack.rubyforge.org'
+  moved_permanently %r{^/doc/files/(.+)\.html$}, 'http://www.rubydoc.info/github/rack/rack/master/file/$1', host: 'rack.rubyforge.org'
   moved_permanently %r{^/doc/([A-Z]+)\.html$}, 'http://www.rubydoc.info/github/rack/rack/master/file/$1', host: 'rack.rubyforge.org'
+  moved_permanently '/doc', 'http://www.rubydoc.info/github/rack/rack', host: 'rack.rubyforge.org'
   moved_permanently %r{^/doc/(.+)\.html$}, 'http://www.rubydoc.info/github/rack/rack/$1', host: 'rack.rubyforge.org'
 
   # treetop.rubyforge.org
