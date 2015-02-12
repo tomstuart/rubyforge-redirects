@@ -1,4 +1,4 @@
-# RubyForge redirects
+# Crowdsourced RubyForge redirects
 
 [![Build Status](https://travis-ci.org/tomstuart/rubyforge-redirects.svg?branch=master)](https://travis-ci.org/tomstuart/rubyforge-redirects)
 
