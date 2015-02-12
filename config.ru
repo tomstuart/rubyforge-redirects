@@ -12,6 +12,10 @@ use Rack::Rewrite do
   moved_permanently '/doc', 'http://www.rubydoc.info/github/rack/rack', host: 'rack.rubyforge.org'
   moved_permanently %r{^/doc/(.+)\.html$}, 'http://www.rubydoc.info/github/rack/rack/$1', host: 'rack.rubyforge.org'
 
+  # rake.rubyforge.org
+  moved_permanently '/', 'http://docs.seattlerb.org/rake/', host: 'rake.rubyforge.org'
+  moved_permanently %r{^/(?:files|classes)/(.+)$}, 'http://docs.seattlerb.org/rake/$1', host: 'rake.rubyforge.org'
+
   # treetop.rubyforge.org
   moved_permanently %r{^/(.*)$}, 'http://cjheath.github.io/treetop/$1', host: 'treetop.rubyforge.org'
 end
