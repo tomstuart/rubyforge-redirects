@@ -19,7 +19,7 @@ When(/^an umapped old RubyForge URL is visited$/) do
 end
 
 Then(/^a not found page should be presented$/) do
-  expect(Capybara.current_session.driver.response.status).to eq Rack::Utils.status_code(:not_found)
+  expect(page.status_code).to eq Rack::Utils.status_code(:not_found)
 end
 
 Then(/^the page should let me search for the gem$/) do
